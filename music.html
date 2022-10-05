@@ -12,6 +12,7 @@
         }
 
         .container {
+            overflow: hidden;
             width: 99%;
             margin: 0 auto;
             height: 100vh;
@@ -78,7 +79,8 @@
             /* height: 300px; */
             animation-name: anim1;
             animation-duration: 2s;
-            animation-timing-function: ease;
+            animation-timing-function: ease;animation-iteration-count: infinite;
+            animation-direction: alternate;
             /* animation-delay: 1s; */
 
         }
@@ -99,9 +101,12 @@
             align-items: center;
             gap: 15px;
             animation-name: anim2;
-            animation-duration: 1.4s;
+            animation-duration: 2s;
             animation-timing-function: ease;
+            animation-iteration-count: infinite;
             /* animation-delay: 1s; */
+            animation-direction: alternate;
+
 
 
         }
@@ -121,11 +126,15 @@
         @keyframes anim1 {
 
             0% {
-                transform: translatex(-500px) scaleY(5);
+                transform: translateX(-500px) scaleY(5);
+            }
+
+            50%{
+                /* transform: translateX(-1000px); color: black */
             }
 
             100% {
-                transform: translate(0);
+                transform: translate(0); color: black; 
             }
 
         }
