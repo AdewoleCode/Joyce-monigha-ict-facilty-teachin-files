@@ -1,0 +1,71 @@
+/* MOBILE WIDTH 600PX */
+/* MOBILE WIDTH 600PX *//* MOBILE WIDTH 600PX */
+/* MOBILE WIDTH 600PX AND BELOW*/
+
+@media screen and (max-width: 600px ){
+    header img {
+        margin-bottom: 5px;
+    }
+    
+    .cta-btn {
+        display: none;
+    }
+
+    .cta {
+        display: block;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        justify-content: center;
+        border-bottom: 2px solid white;
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 5px;
+        border-radius: 3px 3px 0 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 479px ){
+    header img {
+        height: 45px;
+    }
+    nav ul li a{
+        font-size: 17px;
+    }
+
+    nav ul {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 375px ){
+    nav ul {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
+
+@media screen and (max-width: 321px ){
+    nav ul {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,158 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 50px;
+            width: 93.9%;
+            height: 90vh;
+            margin: 0 auto;
+            background-color: dimgray;
+            /* background-image: url(./images/pexels-contact\ form\ bg.jpg); */
+            /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./images/pexels-contact\ form\ bg.jpg); */
+            /* background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100% 100%; */
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 10px;
+            margin: 0;
+            padding: 0;
+            font-size: 42px;
+            color: white;
+        }
+
+        .boxes {
+            width: 85%;
+            margin: 0 auto;
+            margin-top: 3%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+
+        .box1 {
+            height: 550px;
+           width: 35%;
+            border: 1px solid white;
+            background-color: rgb(76, 8, 185);
+        }
+
+        .box2 {
+            height: 550px;
+            width: 35%;
+            border: 1px solid white;
+            background-color: white;
+        }
+
+        form {
+            padding: 30px;
+            /* text-align: center; */
+        }
+
+        input {
+            width: 80%;
+            padding: 15px 10px;
+            border: 1px solid white;
+            background-color: transparent;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 35px;
+            cursor: pointer;
+        }
+
+        input:hover {
+            background-color: rgb(46, 56, 59);
+        }
+
+        .check {
+            width: 5%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 35px;
+            margin-right: 0;
+            /* color: white; */
+        }
+
+        form p {
+            color: white;
+        }
+
+        .btn1 {
+            width: 80%;
+            padding: 12px 45px;
+            display: block;
+            margin: 0 auto;
+            font-size: 20px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .btn1:hover {
+            color: black;
+            background-color: lightskyblue;
+        }
+
+        ::placeholder{
+            color: rgb(228, 217, 217);
+            font-size: 12px;
+        }
+
+        .box2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+ 
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1 class="heading">Create an account</h1>
+        <div class="boxes">
+
+            <div class="box1">
+                <form action="">
+                    <input type="text" placeholder="your name" name="" id="">
+                    <input type="password"  placeholder="your user Id" name="" id="">
+                    <input type="text"  placeholder="your address" name="" id="">
+                    <input type="password"  placeholder="your password" name="" id="">
+                    <p><input class= "check" type="checkbox" name="" id=""> i accept the terms and conditions</p>
+                    <button class="btn1">SIGN UP</button>
+                </form>
+            </div>
+            <div class="box2">
+                <button class=".btn2"><img src="./images/icons/icons8-facebook-48.png" alt="">CONNECT WITH FACEBOOK</button>
+
+                <button><img src="./images/icons/icons8-twitter-100.png" alt=""> CONNECT WITH TWITTER</button>
+
+                <button><img src="./images/icons/icons8-gmail-67.png" alt=""> CONNECT WITH GOOGLE</button>
+
+
+            </div>    
+        </div>
+        <h2>
+            already have an account? <span>login now</span> 
+        </h2>
+
+    </div>
+
+</body>
+
+</html>

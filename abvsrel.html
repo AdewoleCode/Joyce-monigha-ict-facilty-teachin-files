@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parent {
+            width: 80%;
+            background-color: red;
+            border: 5px solid black;
+            height: 50vh;
+            /* position: relative; */
+            margin: 0 10%;
+        }
+
+        .first {
+            border: 3px solid blue;
+            padding: 20px;
+            width: 30%;
+            position: relative;
+            top: 40%;
+            left: 30%;
+        }
+
+        .second {
+            border: 3px solid black;
+            padding: 30px;
+            width: 50%;
+            position: absolute;
+            bottom: 30px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parent">
+        <div class="first">
+            first div
+        </div>
+        <div class="second">
+            second div
+        </div>
+    </div>
+    
+</body>
+</html>

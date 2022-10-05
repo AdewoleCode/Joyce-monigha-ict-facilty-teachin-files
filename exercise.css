@@ -1,0 +1,63 @@
+.bank1 {
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    border: 15px solid yellow;
+}
+
+.bank1 .text1 {
+    border: 5px solid green;
+    margin-bottom: 50px;
+}
+
+.bank1 .text3{
+    border: 10px solid red;
+    margin-top: 50px;
+}
+
+.bank2 {
+    background-color: rgb(255, 0, 0);
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border: 15px dotted yellow;
+}
+
+.bank2 .text2 {
+    border: 5px solid green;
+    margin-bottom: 50px;
+
+}
+
+.bank2 .text3{
+    border: 10px solid rgb(0, 68, 255);
+    margin-top: 50px;
+
+}
+
+.bank3 {
+    background-color: gray;
+    color: pink;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border: 15px dashed yellow;
+
+}
+
+.bank3 .text1 {
+    border: 5px solid red;
+    margin-bottom: 50px;
+
+}
+
+.bank3 .text2 {
+    border: 5px dashed black;
+    margin-bottom: 50px;
+
+}

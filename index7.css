@@ -1,0 +1,80 @@
+.class1 {
+    width: 80%;
+    height: 50vh;
+    background-color: red;
+    margin: auto;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.web {
+    border: 5px solid red;
+    width: 400px;
+    /* width: 9%; */
+    /* padding: 10px 30px ; */
+    /* height: 50vh; */
+}
+
+.web h1{
+    border: 10px solid blue;
+    width: 50%;
+    margin:0 auto;
+    text-align: center;
+}
+
+.class2{
+    width: 50%;
+    height: 50vh;
+    background-color: purple;
+    margin: 0 auto;
+}
+
+.class2 .div2{
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.class2 h1 {
+     margin: 0 auto;
+     /* text-align: center; */
+}
+
+.class1 h2 {
+    background-color: aqua;
+    color: blue;
+    text-align: center;
+    width: 50%;
+    position: relative;
+
+    top: 180px;
+    margin: 0 auto;
+    
+}
+
+.class3 {
+    border: 3px solid red;
+    padding: 50px;
+    width: 50%;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    top: 20%;
+}
+
+.class3 h1{
+    border: 5px solid black;
+}
+
+.class3 h2{
+    border: 5px solid blueviolet;
+}
+
+.class3 h1{
+    padding: 20px;
+}

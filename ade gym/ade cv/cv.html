@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        header {
+            max-width: 100%;
+           min-height: 100vh;
+           background-color: black;
+           color: white;
+           position: relative;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo {
+            text-decoration: none;
+            font-size: 50px;
+            font-weight: bold;
+            color: white;
+            padding-top: 10px;
+            padding-left: 10%;
+        }
+
+        .navlinks {
+            text-align: right;
+            background: #e73838;
+            padding: 10px 30px;
+            border-bottom-left-radius: 18px;
+            border-top-right-radius: 20px;
+        }
+
+        .navlinks ul {
+            display: flex;
+        }
+
+        .navlinks ul li {
+            padding: 12px 28px;
+            list-style: none;
+
+        }
+
+        .navlinks ul li a {
+            text-decoration: none;
+            font-size: 21px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .navlinks ul li a:hover {
+            color: #777;
+        }
+
+        .left-sidebar {
+            width: 20%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: rgb(236, 53, 53);
+
+        }
+
+        .row {
+            border: 1px solid white;
+            padding: 0 10%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            position: relative;
+            margin-top: 5%;
+        }
+
+        .row1 {
+            flex-basis: 40%;
+            border: 1px solid purple;
+        }
+
+        .row1 .img-box {
+            width: 90%;
+            height: 60vh;
+        }
+
+        .row1 img {
+            width: 65%;
+            height: 100%;
+            cursor: pointer;
+            filter: grayscale(0);
+            transition: filter 1s;
+            border-radius: 40px;
+
+        }
+
+            .row1 img:hover {
+                filter: grayscale(1);
+            }
+        .row2 {
+            flex-basis: 55%;
+            border: 1px solid purple;
+
+        }
+
+        .row2 h1 {
+            font-size: 55px;
+            font-weight: 600;
+        }
+        .row2 p {
+            color: #777;
+            margin: 20px 0 40px;
+            width: 70%;
+        }
+
+        .socials {
+            display: flex;
+            margin-top: 20px;
+            gap: 10px;
+            border: 1px solid purple;
+        }
+
+        .icon {
+            height: 85px;
+            width: 85px;
+            border-radius: 20px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .icon:hover {
+            background-color: rgb(197, 55, 55);
+        }
+
+        .icon img {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="Logo"> ADE</a>
+            <div class="navlinks">
+                <ul>
+                    <li><a href="#"> home</a></li>
+                    <li><a href="#"> Services </a></li>
+                    <li><a href="#"> Portfolio</a></li>
+                    <li><a href="#"> About</a></li>
+                    <li><a href="#"> Connect</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="left-sidebar"></div>
+
+        <div class="row">
+            <div class="row1">
+                <div class="img-box">
+                    <img src="../../images/pexels-artem-podrez-6786776.jpg" alt="">
+                </div>
+            </div>
+            <div class="row2">
+                <h1>HI, i'm ADE <br>Website Developer</h1>
+                <p>I have been in website development for the past 5years and have worked with more than 30 clients acroos the country</p>
+                <div class="socials">
+                    <div class="icon">
+                        <img src="../../cv_header_img/facebook.png" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="../../cv_header_img/twitter.png" alt="">
+                    </div> <div class="icon">
+                        <img src="../../cv_header_img/instagram.png" alt="">
+                    </div> <div class="icon">
+                        <img src="../../cv_header_img/youtube.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+</body>
+</html>
