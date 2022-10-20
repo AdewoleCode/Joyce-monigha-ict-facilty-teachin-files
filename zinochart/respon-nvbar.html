@@ -12,7 +12,7 @@
         body{
             margin: 0;
             padding: 0;
-            font-size: 20px;
+            font-size: 25px;
         }
 
         .navbar {
@@ -53,8 +53,8 @@
 
         .toggle-btn {
             position: absolute;
-            top: 1.4rem;
-            right: 1rem;
+            top: 1rem;
+            right: 2rem;
             display: none;
             flex-direction: column;
             justify-content: space-between;
@@ -87,11 +87,31 @@
 
             .nav-items{
                 width: 100%;
-                /* display: none; */
+                display: block;
+            }
+
+            .nav-items.show {
+                display: none;
             }
 
             .nav-items li {
                 text-align: center;
+            }
+
+            #close {
+                display: none;
+            }
+
+            #menu {
+                width: 45px;
+                height: 45px;
+                background-color: white;
+            }
+
+            #close {
+                width: 45px;
+                height: 45px;
+                background-color: white;
             }
         }
 
@@ -105,11 +125,14 @@
             LOGO
         </div>
         <a href="#" class="toggle-btn">
+            <img src="./icons8-menu-squared-50.png" alt="" id="menu">
+            <img src="./icons8-menu-squared-50 (1).png" alt="" id="close">
+
+            <!-- <div class="bar"></div>
             <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+            <div class="bar"></div> -->
         </a>
-        <div class="nav-items">
+        <div class="nav-items show">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">about</a></li>
@@ -120,5 +143,7 @@
          
     </nav>
     
+
+    <script src="./respon-nav.app.js"></script>
 </body>
 </html>

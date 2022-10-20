@@ -150,7 +150,7 @@ button:hover {
     animation-timing-function: ease;
     animation-duration: 3s;
     transition: all .3s;
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
     /* animation-direction: alternate; */
 
 
@@ -161,7 +161,7 @@ button:hover {
     animation-timing-function: ease;
     animation-duration: 3s;
     transition: all .3s;
-    animation-iteration-count: infinite;
+    /* animation-iteration-count: infinite; */
 
 
 
