@@ -17,6 +17,20 @@ body {
     animation-duration: 1s; */
 }
 
+.icons img{
+    background-color: skyblue;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.icons{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    display: none;
+}
+
 nav {
     width: 90%;
     margin: 0 auto;
@@ -24,10 +38,10 @@ nav {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
-    /* border: 3px solid red; */
+    position: relative;
 }
 
-nav div {
+nav .logo {
     color: white;
     font-size: 37px;
     font-weight: 600;
@@ -36,14 +50,13 @@ nav div {
     animation-timing-function: ease;
     animation-duration: 1.5s;
     transition: all .3s;
-    /* animation-iteration-count: infinite; */
 
 }
 
 ul {
     display: flex;
     flex-shrink: 1;
-    /* justify-content: space-between; */
+    z-index: 1000;
 }
 
 ul li {
@@ -61,9 +74,6 @@ ul li {
     animation-timing-function: ease;
     animation-duration: 1.5s;
     transition: all .3s;
-    /* animation-iteration-count: infinite; */
-
-
 }
 
 
@@ -86,7 +96,6 @@ ul li:hover {
 
 .content {
     color: white;
-    /* border: 1px solid white; */
 
 }
 
@@ -100,10 +109,6 @@ ul li:hover {
     animation-timing-function: ease;
     animation-duration: 1.5s;
     transition: all .3s;
-    /* animation-iteration-count: infinite; */
-
-
-
 }
 
 .content p {
@@ -115,17 +120,10 @@ ul li:hover {
     animation-timing-function: ease;
     animation-duration: 1.5s;
     transition: all .3s;
-    /* animation-iteration-count: infinite; */
-
-
 }
 
 .btn {
     margin-top: 40px;
-    /* animation-name: text-Animation;
-    animation-delay: 3s;
-    animation-duration: 1s; */
-
 }
 
 button {
@@ -150,8 +148,6 @@ button:hover {
     animation-timing-function: ease;
     animation-duration: 3s;
     transition: all .3s;
-    /* animation-iteration-count: infinite; */
-    /* animation-direction: alternate; */
 
 
 }
@@ -161,18 +157,28 @@ button:hover {
     animation-timing-function: ease;
     animation-duration: 3s;
     transition: all .3s;
-    /* animation-iteration-count: infinite; */
-
-
-
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
+
+    ul li {
+        margin-right: 10px;
+        font-size: 15px;
+        border: 3px solid rgb(47, 47, 150);
+        padding: 10px 5px;
+        border-radius: 20px;
+        animation-name: home-Animation;
+        animation-timing-function: ease;
+        animation-duration: 1.5s;
+        transition: all .3s;
+    
+    
+    }
 
     nav {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
     }
 
     .content p {
@@ -223,16 +229,41 @@ button:hover {
         border: 2px solid rgb(65, 65, 202);
     }
 
-    @media (max-width: 415px) {
+    @media (max-width: 426px) {
+       
         nav {
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
             width: 100%;
+        }
+
+        .container {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./pexels-home\ interior.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 5px;
+        }
+        
+
+        .icons{
+            display: block;
+        }
+
+        .icons #close {
+            display: none;
         }
 
         ul {
             margin: 0 0;
-            padding: 0 0;
+            padding: 20px 0;
+            flex-direction: column;
+            background-color: rgb(78, 74, 74);
+            height: 30vh;
+            justify-content: space-evenly;
             align-items: center;
-            justify-content: center;
+            display: none;
         }
 
         button {
