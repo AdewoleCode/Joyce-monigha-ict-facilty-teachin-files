@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .contain {
+            /* border: 1px solid blue; */
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            /* width: 50%; */
+        }
+
+        input {
+            padding: 30px;
+        }
+
+        button {
+            padding: 30px;
+            font-size: 20px;
+        }
+
+        .list-box {
+            /* border: 2px solid blue; */
+            width: 15%;
+            padding: 20px 10px;
+             margin: 0 auto;
+        }
+
+        .list-box li {
+            background-color: aqua;
+            padding: 10px;
+            border: 1px solid black;
+            cursor: pointer;
+            font-size: 25px;
+        }
+
+        .list-box li:hover {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>TO DO LIST</h1>
+    <div class="contain">
+        <input type="text" placeholder="" id="input"><button id="button">+</button>
+
+
+    </div>
+
+    <div class="list-box">
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
